@@ -1,6 +1,7 @@
 package CertificatesAndResult;
 
 import javax.swing.*;
+import javax.swing.Timer;
 
 public class DigitalClock extends JFrame {
     private JLabel Clock, clockLabel;
@@ -14,6 +15,8 @@ public class DigitalClock extends JFrame {
         setVisible(true);
     }
     public void Clockfunction(){
-
+        int delay=1000;
+        ActionListner taskPerformed=new ActionListner();
+        Timer time=new Timer(delay, null);
     }
 }
