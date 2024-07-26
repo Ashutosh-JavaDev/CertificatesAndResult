@@ -9,5 +9,7 @@ public class DigitalClock extends JFrame {
         setLayout(null);
         setSize(400,400);
         setLocation(300,150);
+        setTitle("My Clock");
+        setVisible(true);
     }
 }
