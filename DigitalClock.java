@@ -1,9 +1,13 @@
- package CertificatesAndResult;
- import javax.swing.*;
+package CertificatesAndResult;
 
- public class DigitalClock extends JFrame{
-   private  JLabel Clock,clockLabel;
-    DigitalClock(){
+import javax.swing.*;
 
+public class DigitalClock extends JFrame {
+    private JLabel Clock, clockLabel;
+
+    DigitalClock() {
+        setLayout(null);
+        setSize(400,400);
+        setLocation(300,150);
     }
- }
+}
