@@ -21,5 +21,8 @@ public class DigitalClock extends JFrame {
         this.add(Clock);
         this.add(clockLabel);
     }
+    public void clockStart(){
+        
+    }
    
 }
