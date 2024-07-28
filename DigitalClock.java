@@ -7,7 +7,7 @@ public class DigitalClock extends JFrame {
     private JLabel Clock, clockLabel;
 
     DigitalClock() {
-        setLayout(null);
+        //setLayout(null);
         setSize(400,400);
         setLocation(300,150);
         setTitle("My Clock");
@@ -17,5 +17,12 @@ public class DigitalClock extends JFrame {
     public void Clockfunction(){
         Clock=new JLabel("My Clock");
         clockLabel=new JLabel("New Clock...");
+        this.setLayout(new GridLayout(2,1));
+        this.add(Clock);
+        this.add(clockLabel);
+    }
+    private void setLayout(GridLayout gridLayout) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setLayout'");
     }
 }
