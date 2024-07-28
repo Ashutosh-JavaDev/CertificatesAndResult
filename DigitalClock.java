@@ -11,12 +11,10 @@ public class DigitalClock extends JFrame {
         setSize(400,400);
         setLocation(300,150);
         setTitle("My Clock");
-        Clockfunction();
+        this.Clockfunction();
         setVisible(true);
     }
     public void Clockfunction(){
-        int delay=1000;
-        ActionListner taskPerformed=new ActionListner();
-        Timer time=new Timer(delay, null);
+        
     }
 }
