@@ -32,8 +32,7 @@ public class DigitalClock extends JFrame implements ActionListener {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 // Get current date and time and update clockLabel
-                SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-                String dateTime = sdf.format(new Date());
+              String dateTime=new Date().toString();
                 clockLabel.setText(dateTime);
             }
         });
