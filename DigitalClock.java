@@ -16,5 +16,6 @@ public class DigitalClock extends JFrame {
     }
     public void Clockfunction(){
         Clock=new JLabel("My Clock");
+        clockLabel=new JLabel("New Clock...");
     }
 }
