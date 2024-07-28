@@ -4,7 +4,8 @@ import javax.swing.*;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Date;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 // import java.util.Timer;
 public class DigitalClock extends JFrame implements ActionListener {
     private JLabel Clock, clockLabel;
@@ -33,6 +34,11 @@ public class DigitalClock extends JFrame implements ActionListener {
             }
         });
         timer.start();
+    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
     }
  
    
