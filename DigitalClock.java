@@ -2,8 +2,11 @@ package CertificatesAndResult;
 
 import javax.swing.*;
 import java.awt.GridLayout;
-
-public class DigitalClock extends JFrame {
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Date;
+// import java.util.Timer;
+public class DigitalClock extends JFrame implements ActionListener {
     private JLabel Clock, clockLabel;
 
     DigitalClock() {
@@ -22,7 +25,15 @@ public class DigitalClock extends JFrame {
         this.add(clockLabel);
     }
     public void clockStart(){
-        
+        Timer timer=new Timer(1000, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae){
+                String dateTime=new Date().toString();
+                clockLabel.setText(dateTime);
+            }
+        });
+        timer.start();
     }
+ 
    
 }
