@@ -1,7 +1,7 @@
 package CertificatesAndResult;
 
 import javax.swing.*;
-import javax.swing.Timer;
+import java.awt.GridLayout;
 
 public class DigitalClock extends JFrame {
     private JLabel Clock, clockLabel;
@@ -11,15 +11,15 @@ public class DigitalClock extends JFrame {
         setSize(400,400);
         setLocation(300,150);
         setTitle("My Clock");
-        Clockfunction();
+        this.Clockfunction();
         setVisible(true);
     }
     public void Clockfunction(){
         Clock=new JLabel("My Clock");
         clockLabel=new JLabel("New Clock...");
-        setLayout(new GridLayout(2,1));
-        add(Clock);
-        add(clockLabel);
+        this.setLayout(new GridLayout(2,1));
+        this.add(Clock);
+        this.add(clockLabel);
     }
    
 }
