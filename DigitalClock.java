@@ -15,7 +15,9 @@ public class DigitalClock extends JFrame implements ActionListener {
         setSize(400,400);
         setLocation(300,150);
         setTitle("My Clock");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.Clockfunction();
+        this.clockStart();
         setVisible(true);
     }
     public void Clockfunction(){
@@ -28,8 +30,10 @@ public class DigitalClock extends JFrame implements ActionListener {
     public void clockStart(){
         Timer timer=new Timer(1000, new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent ae){
-                String dateTime=new Date().toString();
+            public void actionPerformed(ActionEvent ae) {
+                // Get current date and time and update clockLabel
+                SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+                String dateTime = sdf.format(new Date());
                 clockLabel.setText(dateTime);
             }
         });
