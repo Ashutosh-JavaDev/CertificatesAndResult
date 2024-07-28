@@ -21,8 +21,5 @@ public class DigitalClock extends JFrame {
         this.add(Clock);
         this.add(clockLabel);
     }
-    private void setLayout(GridLayout gridLayout) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setLayout'");
-    }
+   
 }
